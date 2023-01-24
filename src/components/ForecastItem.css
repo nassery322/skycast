@@ -1,0 +1,19 @@
+.forecast-item {
+ 
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    text-align: center;
+    text-transform: capitalize;
+}
+.forecast-item div{
+    margin-bottom: 10px; color:white;
+}
+.forecast-icon img{
+    width: 100px;
+}
+@media (max-width:660px){
+    .forecast-icon img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,7 @@
+.options-section{
+    border: none green; display: flex;   justify-content: center; margin-bottom: 20px;
+}
+.options-section button{
+    border-radius: 50%; height: 40px; width: 40px; margin-right: 10px; background-color: transparent; cursor: pointer; color:white; border-color: white;
+}
+

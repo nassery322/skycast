@@ -1,0 +1,6 @@
+.home-page{
+    height: auto; min-height: 105vh; padding-top:30px; background-size: cover; 
+}
+#home-page{
+    background-size: cover !important;
+}
