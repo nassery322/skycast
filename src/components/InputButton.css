@@ -18,7 +18,7 @@ margin-bottom: 10px;
     display:block;
     width:95%;
     border:none;
-    border-bottom:1px solid #757575;
+    border-bottom:1px solid #f3f3f3;
     background-color: transparent !important;
     color:white;
 
@@ -27,7 +27,7 @@ margin-bottom: 10px;
   
   /* LABEL ======================================= */
   label 				 {
-    color:rgb(100, 99, 99); 
+    color:rgb(234, 227, 227); 
     font-size:18px;
     font-weight:normal;
     position:absolute;
