@@ -1,73 +1,109 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
 
 .today-weather {
-    font-family: 'Dosis', sans-serif; font-weight: 500;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
     width: 50%;
     margin-right: auto;
     margin-left: auto;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color:white ; 
+    color: white;
     font-weight: 600;
     border: none;
     box-sizing: border-box;
 }
 
-.weather-icon img{
+.weather-icon img {
     width: 200px;
 }
-.location, .date-time{
+
+.location,
+.date-time {
     font-size: 1.4rem;
 }
 
-.location{
+.location {
     margin-bottom: 20px;
 }
-.weather-description{ 
-  display: flex; flex-direction: column; align-items: center; width:50%; margin-bottom: 20px; margin-right: auto; margin-left: auto; border: none;
-}
-.weather-description section{
-    width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; 
-}
-.condition{
-    font-size: 1.4rem;  text-transform: capitalize;
+
+.weather-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
 }
 
-.section1{
-    border-right:2px none; font-size: 1.8rem;
+.weather-description section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.weather-temp{
+
+.condition {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+.section1 {
+    border-right: 2px none;
+    font-size: 1.8rem;
+}
+
+.weather-temp {
     margin-bottom: 10px;
 }
-.section2{
-    display: flex; flex-direction: row !important; width: 100%; margin-top: 20px;
+
+.section2 {
+    display: flex;
+    flex-direction: row !important;
+    width: 100%;
+    margin-top: 20px;
 }
-.section2 div{
-    width: 100%; height: 40px; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; border: none;
+
+.section2 div {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border: none;
 }
 
 
-@media (max-width:830px){
-    .weather-description{
+@media (max-width:830px) {
+    .weather-description {
         width: 100%;
     }
-    .section2 div{
+
+    .section2 div {
         font-size: 1rem;
     }
 }
-@media (max-width:600px){
-    
-    .condition{
-        font-size: 1.2rem;
+
+@media (max-width:600px) {
+
+    .condition {
+        font-size: 1.3rem;
     }
-    .location, .date-time{
-        font-size: 1.2rem;
+
+    .location,
+    .date-time {
+        font-size: 1.3rem;
     }
-    .today-weather{
-        width: 100%; font-weight: 500;
+
+    .today-weather {
+        width: 100%;
+        font-weight: 600;
     }
 }

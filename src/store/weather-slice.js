@@ -17,7 +17,7 @@ const weatherSlice = createSlice({
         cityInput:'1',
         hours: null,
         measurement:false,
-        darkMode:false    
+        darkMode:true    
     },
     reducers:{
         getTodayWeather(state, action){
