@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/skycast/static/css/main.63070dc5.css",
+    "main.js": "/skycast/static/js/main.eb07e03f.js",
+    "static/js/787.dcf09b56.chunk.js": "/skycast/static/js/787.dcf09b56.chunk.js",
+    "static/media/nightcloudy1.jpg": "/skycast/static/media/nightcloudy1.3f3744660ce38f7d48eb.jpg",
+    "static/media/snowynight.jpg": "/skycast/static/media/snowynight.34e24388b7f1871f7667.jpg",
+    "static/media/snowyday.jpg": "/skycast/static/media/snowyday.50cd390235d5fe364352.jpg",
+    "static/media/darkskyclean.jpg": "/skycast/static/media/darkskyclean.0c2fc2b7966c55bc1074.jpg",
+    "static/media/rainyday.jpg": "/skycast/static/media/rainyday.fee05f4ab3dddb66af2e.jpg",
+    "static/media/thunderstorm.jpg": "/skycast/static/media/thunderstorm.2043f9b32766e99c892e.jpg",
+    "static/media/cloudyday.jpg": "/skycast/static/media/cloudyday.06d0cc9429f5b79a56d9.jpg",
+    "static/media/cloud-sky-blue.jpg": "/skycast/static/media/cloud-sky-blue.29a30cb37bfa54881b7c.jpg",
+    "static/media/clearsky.jpg": "/skycast/static/media/clearsky.d4a47ac33f797c064082.jpg",
+    "index.html": "/skycast/index.html",
+    "main.63070dc5.css.map": "/skycast/static/css/main.63070dc5.css.map",
+    "main.eb07e03f.js.map": "/skycast/static/js/main.eb07e03f.js.map",
+    "787.dcf09b56.chunk.js.map": "/skycast/static/js/787.dcf09b56.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63070dc5.css",
+    "static/js/main.eb07e03f.js"
+  ]
+}
