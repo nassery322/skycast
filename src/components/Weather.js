@@ -95,6 +95,9 @@ props.isLoading(false)
 
   useEffect(()=>{
    getLocation(fetchWeather()) 
+   if(props.input){
+    fetchWeather()
+   }
   }, [props.input])
 
 }
