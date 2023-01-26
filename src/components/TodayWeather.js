@@ -16,7 +16,13 @@ const TodayWeather = props =>{
     const time = useSelector((state) => state.weather.time)
     const weather = useSelector((state) => state.weather.todayWeather);
     const measurement = useSelector((state) => state.weather.measurement);
+    const currentHour = useSelector((state) => state.weather.hours);
+    const sunrise = useSelector((state) => state.weather.sunrise);
+    const sunset = useSelector((state) => state.weather.sunset);
         useEffect(()=>{
+            const date = new Date()
+            const time = date.getHours()
+            console.log(sunrise)
         if(measurement){
             setTempreture((temp * 9/5 + 32).toFixed())
             setTempretureFormat('F')
@@ -30,17 +36,26 @@ const TodayWeather = props =>{
             setTempretureFormat('C')
         }
         if(weather){
-           if(weather == 'clear'){
-            setImageSrc('clear-day')
-            return;
-           }
-           if(weather == 'clouds'){
-            setImageSrc('cloudy')
-            return;
-           }else{
-            setImageSrc(weather)
-            return;
-           }
+            if(currentHour > sunset || currentHour < sunrise){
+                if(weather == 'clear'){
+                    setImageSrc('clear-night')
+                    return;
+                   }
+            }
+            else{
+                if(weather == 'clear'){
+                    setImageSrc('clear-day')
+                    return;
+                   }
+                   if(weather == 'clouds'){
+                    setImageSrc('cloudy')
+                    return;
+                   }else{
+                    setImageSrc(weather)
+                    return;
+                   }
+            }
+          
            
            
         }
