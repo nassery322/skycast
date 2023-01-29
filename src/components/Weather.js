@@ -13,7 +13,7 @@ const success = (position) => {
 
 async function fetchWeather(position){
  
-  const API_KEY = '3f61f40a6098f78f8f572a5ea2fc22ec';
+  const API_KEY = process.env.REACT_APP_API_KEY;
  
   const API_URL_CORDS = position && `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&cnt=128&appid=${API_KEY}` ;  
   const API_URL_CITY = `https://api.openweathermap.org/data/2.5/forecast?q=${props.input}&cnt=128&appid=${API_KEY}`;

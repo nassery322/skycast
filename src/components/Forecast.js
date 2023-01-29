@@ -12,7 +12,7 @@ const [forecast, setForecast] = useState();
     return <Fragment>
         <section className='forecast-section'>
             <div className='forecast-header'>5-day Forecast :</div>
-            {forecast && forecast.map((item) => <ForecastItem dayName={item.dayName} tempHigh={item.tempHigh} tempLow={item.tempLow} weatherCondition={item.weatherCondition} /> )}
+            {forecast && forecast.map((item, index) => <ForecastItem key={index} dayName={item.dayName} tempHigh={item.tempHigh} tempLow={item.tempLow} weatherCondition={item.weatherCondition} /> )}
         </section>
     </Fragment>
 }

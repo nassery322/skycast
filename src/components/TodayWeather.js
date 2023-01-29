@@ -22,7 +22,6 @@ const TodayWeather = props =>{
         useEffect(()=>{
             const date = new Date()
             const time = date.getHours()
-            console.log(sunrise)
         if(measurement){
             setTempreture((temp * 9/5 + 32).toFixed())
             setTempretureFormat('F')
@@ -39,6 +38,13 @@ const TodayWeather = props =>{
             if(currentHour > sunset || currentHour < sunrise){
                 if(weather == 'clear'){
                     setImageSrc('clear-night')
+                    return;
+                   }
+                   if(weather == 'clouds'){
+                    setImageSrc('cloudy')
+                    return;
+                   }else{
+                    setImageSrc(weather)
                     return;
                    }
             }
